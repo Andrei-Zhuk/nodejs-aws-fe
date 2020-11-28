@@ -11,7 +11,7 @@
 #
 # Happy Coding!
 
-service: rs-aws-app
+service: rs-aws-app-fe
 # app and org for use with dashboard.serverless.com
 #app: your-app-name
 #org: your-org-name
@@ -30,7 +30,7 @@ plugins:
 
 custom:
   client:
-    bucketName: rs-aws-app-second
+    bucketName: rs-aws-app-fe
     distributionFolder: build
   # serverless-single-page-app-plugin plugin configuration
   s3LocalPath: ${self:custom.client.distributionFolder}/
